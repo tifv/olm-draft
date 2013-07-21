@@ -1,0 +1,7 @@
+build/
+*.pdf
+*.tar.xz
+
+.vim*
+.*.sw[po]
+

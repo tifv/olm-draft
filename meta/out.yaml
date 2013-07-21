@@ -1,0 +1,17 @@
+algebra10:
+  $sequence: &algebra10-sequence
+  - combinatorics
+  - complex-numbers
+  $fluid: *algebra10-sequence
+  no-control:
+    combinatorics:
+      $alias: ../../combinatorics/no-control
+    complex-numbers:
+      $alias: ../../complex-numbers/no-control
+    $fluid: *algebra10-sequence
+  combinatorics:
+    no-control:
+      $fluid: ['../basics']
+  complex-numbers:
+    no-control:
+      $fluid: ['../basics', '../geometry']

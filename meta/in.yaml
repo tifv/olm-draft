@@ -1,0 +1,30 @@
+!!omap
+- algebra10: !!omap
+  - combinatorics: !!omap
+    - basics.tex:
+        caption: Перечислительная комбинаторика
+    - control: !!omap
+      - '1': !!omap
+        - v1.tex:
+            caption: 'Контрольная работа: перечислительная комбинаторика'
+        - v2.tex:
+            caption: 'Контрольная работа: перечислительная комбинаторика'
+        - vr.tex:
+            caption: 'Контрольная работа: перечислительная комбинаторика'
+  - complex-numbers: !!omap
+    - basics.tex:
+        caption: Комплексные числа
+    - geometry.tex:
+        caption: Комплексные числа в геометрии
+    - control: !!omap
+      - proposed.tex: {}
+      - v1.tex:
+          caption: 'Контрольная работа: комплексные числа'
+      - v2.tex:
+          caption: 'Контрольная работа: комплексные числа'
+      - v3.tex:
+          caption: 'Контрольная работа: комплексные числа'
+      - v4.tex:
+          caption: 'Контрольная работа: комплексные числа'
+      - vr.tex:
+          caption: 'Контрольная работа: комплексные числа'
