@@ -1,5 +1,15 @@
 !!omap
 - algebra10: !!omap
+  - equivalence: !!omap
+    - 1.tex:
+        caption: Эквивалентные переходы
+    - control: !!omap
+      - v1.tex:
+          caption: 'Контрольная работа: эквивалентные переходы'
+      - v2.tex:
+          caption: 'Контрольная работа: эквивалентные переходы'
+      - vr.tex:
+          caption: 'Контрольная работа: эквивалентные переходы'
   - combinatorics: !!omap
     - basics.tex:
         caption: Перечислительная комбинаторика

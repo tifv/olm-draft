@@ -1,4 +1,3 @@
-* source/algebra10/equivalence
 * source/algebra10/linear-sys
 * source/algebra10/logarithm
 * source/algebra10/number-th

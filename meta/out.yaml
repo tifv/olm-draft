@@ -1,17 +1,21 @@
 algebra10:
-  $sequence: &algebra10-sequence
-  - combinatorics
+  $fluid:
+  - equivalence
   - complex-numbers
-  $fluid: *algebra10-sequence
-  no-control:
-    combinatorics:
-      $alias: ../../combinatorics/no-control
-    complex-numbers:
-      $alias: ../../complex-numbers/no-control
-    $fluid: *algebra10-sequence
+  - combinatorics
+  $fluid$opt:
+    mask: "control"
+  control:
+    $fluid: ['..']
+    $fluid$opt:
+      mask: "control !"
+
+  equivalence:
+    control:
+      $keywords: ['control']
   combinatorics:
-    no-control:
-      $fluid: ['../basics']
+    control:
+      $keywords: ['control']
   complex-numbers:
-    no-control:
-      $fluid: ['../basics', '../geometry']
+    control:
+      $keywords: ['control']

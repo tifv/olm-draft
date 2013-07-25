@@ -1,0 +1,427 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Эквивалентные переходы %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Тихонов Юлий, 2011-2012
+
+\emph{Далее всюду $c > 0$.}
+\vspace{-2.5ex}
+
+\subsection*{Иррациональные уравнения}
+
+\begin{tabbing}
+\hspace{20em}\=\\[-4ex]
+\(
+    \sqrt{f} = g
+\Leftrightarrow
+    \begin{cases}
+        f = g^2
+    ;\\
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{3 + x} = 3 - x$.
+\\[2ex]%%%%%%%%%%
+\begin{minipage}{20em}
+\(
+    \sqrt{f} = \sqrt{g} + c
+\Leftrightarrow
+    f = g + c^2 + 2 c \sqrt{g}
+\).
+\\[0.5ex]
+\text{Что будет при $c \leq 0$?}
+\end{minipage}
+\>
+\problem
+$\sqrt{x + 5} = \sqrt{x - 3} + 2$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} + \sqrt{g} = c
+\Leftrightarrow
+    \begin{cases}
+        2 \sqrt{fg} = c^2 - f - g
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{x + 1} + \sqrt{x - 4} = 5$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} + \sqrt{g} = \sqrt{h}
+\Leftrightarrow
+    \begin{cases}
+        f + g + 2 \sqrt{fg} = h
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{3 x + 1} + \sqrt{x + 4} = \sqrt{9 - x}$.
+\end{tabbing}
+
+\claim{Замечание о монотонности}
+В уравнении вида $F(x) = c$ в случае строго монотонной функции $F$ можно угадать
+корень, и он будет единственный.
+
+\example
+\\[0.5ex]
+\textbf{(1)}
+\(
+    \sqrt{2 x - 3} + \sqrt{4 x + 1} = 4
+\).
+Левая часть возрастает, $x = 2$~--- корень.
+\\[1ex]
+\textbf{(2)}
+\(
+    \sqrt{x} - \sqrt{x - 5} = 1
+\Leftrightarrow
+    \dfrac{5}{\sqrt{x} + \sqrt{x - 5}} = 1
+\).
+Левая часть убывает, $x = 9$~--- корень.
+
+
+\subsection*{Иррациональные неравенства}
+
+\begin{tabbing}
+\hspace{20em}\=\\[-4ex]
+\(
+    \sqrt{f} < g
+\Leftrightarrow
+    \begin{cases}
+        f < g^2
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{4 - x} < x + 2$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} > g
+\Leftrightarrow
+    \left[\begin{aligned}
+        &f > g^2
+    ;\\
+        &\begin{cases}
+            g < 0
+        ;\\
+            f \geq 0
+        .\end{cases}
+    \end{aligned}\right.
+\)
+\>
+\problem
+$\sqrt{x + 5} > 7 - x$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} - \sqrt{g} > c
+\Leftrightarrow
+    f > g + c^2 + 2 c \sqrt{g}
+\).
+\>
+\problem
+$\sqrt{6 + x} - \sqrt{4 - x} > 2$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} - \sqrt{g} < c
+\Leftrightarrow
+    \begin{cases}
+        f < g + c^2 + 2 c \sqrt{g}
+    ;\\
+        f \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{x + 5} - \sqrt{x - 3} < 2$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} + \sqrt{g} \vee c
+\Leftrightarrow
+    \begin{cases}
+        f + g + 2 \sqrt{f g} \vee c^2
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{2 x + 3} + \sqrt{3 x + 3} > 1$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} + \sqrt{g} > \sqrt{h}
+\Leftrightarrow
+    \begin{cases}
+        f + g + 2 \sqrt{f g} > h
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    ;\\
+        h \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{4 x - 23} + \sqrt{x + 3} > \sqrt{x + 10}$.
+\\[2ex]%%%%%%%%%%
+\(
+    \sqrt{f} + \sqrt{g} < \sqrt{h}
+\Leftrightarrow
+    \begin{cases}
+        f + g + 2 \sqrt{f g} < h
+    ;\\
+        f \geq 0
+    ;\quad
+        g \geq 0
+    .\end{cases}
+\)
+\>
+\problem
+$\sqrt{x - 1} + \sqrt{2 x - 3} < \sqrt{x + 2}$.
+\end{tabbing}
+
+
+\subsection*{Логарифмы}
+
+$\veebar$~--- это одно из $>$, $<$, $\geq$, $\leq$;
+\quad
+$\vee$~--- это одно из $>$, $<$.
+
+\begin{tabbing}
+\hspace{20em}\=\\[-4ex]
+\(
+    \log_a f = \log_a g
+\Leftrightarrow
+    \begin{cases}
+        f = g > 0
+    ;\\
+        a \in (0; 1) \cup (1; +\infty)
+    .\end{cases}
+\)
+\>
+\problem
+$\log_5 (x - 1) = \log_5 \dfrac{x}{1 + x}$.
+\\[2ex]%%%%%%%%%%
+\(
+    \log_a f > \log_a g
+\Leftrightarrow
+    \left[\begin{aligned}
+        &\begin{cases}
+            f > g > 0
+        ;\\
+            a > 1
+        ;\end{cases}
+     \\
+        &\begin{cases}
+            0 < f < g
+        ;\\
+            f > 0
+        ;\\
+            0 < a < 1
+        .\end{cases}
+    \end{aligned}\right.
+\)
+\>
+\problem
+$\log_7 \dfrac{x + 3}{21} > \log_7 \dfrac{2}{3 x - 6}$.
+\\[2ex]%%%%%%%%%%
+\(
+    \log_a f + \log_a g \veebar 0
+\Leftrightarrow
+    \begin{cases}
+        \log_a (f g) \veebar 0
+    ;\\
+        f > 0
+    .\end{cases}
+\)
+\>
+\problem
+$\lg (x + \frac{3}{2}) + \lg x > 0$.
+\\[2ex]%%%%%%%%%%
+\(
+    \log_a f - \log_a g \veebar 0
+\Leftrightarrow
+    \begin{cases}
+        \log_a \dfrac{f}{g} \veebar 0
+    ;\\
+        f > 0
+    .\end{cases}
+\)
+\>
+\problem
+$\log_3 \dfrac{x + 1}{3} - \log_3 \dfrac{x}{2 - x} > 0$.
+\\[2ex]%%%%%%%%%%
+\(
+    \log_g f > c
+\Leftrightarrow
+    \left[\begin{aligned}
+        &\begin{cases}
+            g > 1
+        ;\\
+            f > g^c
+        ;\end{cases}
+     \\
+        &\begin{cases}
+            0 < g < 1
+        ;\\
+            0 < f < g^c
+        .\end{cases}
+    \end{aligned}\right.
+\)
+\>
+\problem
+$\log_{3 x - 1} 2 x > 1$.
+\\[2ex]%%%%%%%%%%
+\(
+    \log_g f < c
+\Leftrightarrow
+    \left[\begin{aligned}
+        &\begin{cases}
+            g > 1
+        ;\\
+            0 < f < g^c
+        ;\end{cases}
+     \\
+        &\begin{cases}
+            0 < g < 1
+        ;\\
+            f > g^c
+        .\end{cases}
+    \end{aligned}\right.
+\)
+\>
+\problem
+$\log_x \dfrac{4 x + 1}{6(x - 1)} < 1$.
+\\[2ex]%%%%%%%%%%
+%\(
+%    \log_g f \vee c
+%\Leftrightarrow
+%    \begin{cases}
+%        f > 0
+%    ;\\
+%        g > 0
+%    ;\\
+%        (g - 1) (f - g^c) \vee 0
+%    .\end{cases}
+%\)
+%\>
+%%
+%\\[2ex]%%%%%%%%%%
+\begin{minipage}{20em}
+\(
+    \log_g f \veebar c
+\Leftrightarrow
+    \begin{cases}
+        f > 0
+    ;\\
+        g > 0
+    ;\\
+        \cfrac{f - g^c}{g - 1} \veebar 0
+    .\end{cases}
+\)
+\end{minipage}
+\>
+\problem
+$\log_{9 x^2} (6 + 2 x - x^2) \leq 1$.
+\end{tabbing}
+
+\claim{Пример (о монотонности)}
+\\
+\textbf{(1)}
+$\log_3 (x + 3) + \log_3 (x + 1) = 1$.
+Левая часть возрастает, $x = 0$~--- корень.
+\\
+\textbf{(2)}
+$2 \lg x > \log_2 (12 - x) + 1$.
+Левая часть возрастает, правая~--- убывает, $x = 10$~--- корень.
+
+
+\subsection*{Бонус}
+
+\emph{Решить с помощью эквивалентных преобразований.}
+
+\begin{problems}
+
+\item
+\(
+    \dfrac{
+        26 - 3 x + \sqrt{x^2 - 2 x - 24}
+    }{
+        x - 10
+    }
+<
+    -1
+\).
+\qquad
+\problem
+$\sqrt{x + 1} - \sqrt{2 x - 5} - \sqrt{x - 2} = 0$.
+
+\item
+% не имеет отношения к иррациональным неравенствам.
+\(
+    \sqrt{x + 3 - 4 \sqrt{x - 1}}
+    +
+    \sqrt{x + 8 - 6 \sqrt{x - 1}}
+=
+    1
+\).
+
+\item
+$\log_{1/3} (3 x + 4) > \log_{1/9} (x^2 + 2)$
+\qquad
+\problem
+$\log_x (9 x + 1) < \log_x |10 x - 1|$.
+
+\item
+$\log_{2 |x|} (x^2 - 13 x + 36) \leq \log_{2 |x|} 6$.
+\qquad
+\problem
+\(
+    \dfrac{
+        \log_{1/2}
+            \frac{12 x^2 - 60 x + 77}{4}
+    }{
+        x^2 - 5 x + 6
+    }
+<
+    0
+\).
+
+\item
+\(
+    \dfrac{
+        \lg (3 x^2 - 3 x + 7) - \lg (6 + x - x^2)
+    }{
+        (10 x - 7) (10 x - 3)
+    }
+\geq
+    0
+\).
+\qquad
+\problem
+\(
+    \log_{x + 5/2}
+        \left(
+            \dfrac{x - 5}{2 x - 3}
+        \right)^2
+>
+    0
+\).
+
+\end{problems}
+
