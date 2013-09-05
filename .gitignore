@@ -5,3 +5,6 @@ build/
 .vim*
 .*.sw[po]
 
+# Temporary
+*.link
+

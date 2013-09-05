@@ -1,0 +1,23 @@
+algebra10:
+  $style: {extend: [subject]}
+  $fluid:
+  - linear-sys
+  - equivalence
+  - complex-numbers
+  - combinatorics
+  control:
+    $fluid:
+    - ../linear-sys/control
+    - ../equivalence/control
+    - ../complex-numbers/control
+    - ../combinatorics/control
+
+  linear-sys:
+    $fluid: ['1']
+  equivalence:
+    $fluid: ['1']
+  combinatorics:
+    $fluid: ['basics']
+  complex-numbers:
+    $fluid: ['basics', 'geometry']
+
