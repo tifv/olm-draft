@@ -1,1 +1,1 @@
-$style: [/base]
+$style: [/base, /pgflayout]

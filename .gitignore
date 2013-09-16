@@ -4,6 +4,7 @@ build/
 
 .vim*
 .*.sw[po]
+__pycache__
 
 # Temporary
 *.link
