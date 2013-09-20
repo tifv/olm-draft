@@ -1,45 +1,51 @@
 !!omap
 - base.sty: {}
 - pgflayout.sty: {}
-- algebra10: !!omap
+- algebra: !!omap
   - subject.sty: {}
-  - linear-sys: !!omap
-    - control: !!omap
-      - basics: !!omap
+  - basics: !!omap
+    - induction: !!omap
+      - main.tex:
+          $caption: Индукция
+      - control: !!omap []
+    - equivalence: !!omap
+      - main.tex:
+          $caption: Эквивалентные переходы
+      - control: !!omap
         - v1.tex:
-            $caption: Системы линейных уравнений
+            $caption: Эквивалентные переходы
+            $test: true
         - v2.tex:
-            $caption: Системы линейных уравнений
-        - v3.tex:
-            $caption: Системы линейных уравнений
-        - v4.tex:
-            $caption: Системы линейных уравнений
+            $caption: Эквивалентные переходы
+            $test: true
         - vr.tex:
-            $caption: 'Контрольная работа: системы линейных уравнений'
+            $caption: Эквивалентные переходы
+            $test: true
+  - linear-sys: !!omap
     - basics.tex:
         $caption: Системы линейных уравнений
-  - equivalence: !!omap
-    - 1.tex:
-        $caption: Эквивалентные переходы
-    - control: !!omap
-      - '1': !!omap
-        - v1.tex:
-            $caption: 'Контрольная работа: эквивалентные переходы'
-        - v2.tex:
-            $caption: 'Контрольная работа: эквивалентные переходы'
-        - vr.tex:
-            $caption: 'Контрольная работа: эквивалентные переходы'
-  - combinatorics: !!omap
-    - basics.tex:
-        $caption: Перечислительная комбинаторика
     - control: !!omap
       - basics: !!omap
         - v1.tex:
-            $caption: 'Контрольная работа: перечислительная комбинаторика'
+            $caption: Системы линейных уравнений
+            $test: true
         - v2.tex:
-            $caption: 'Контрольная работа: перечислительная комбинаторика'
+            $caption: Системы линейных уравнений
+            $test: true
+        - v3.tex:
+            $caption: Системы линейных уравнений
+            $test: true
+        - v4.tex:
+            $caption: Системы линейных уравнений
+            $test: true
         - vr.tex:
-            $caption: 'Контрольная работа: перечислительная комбинаторика'
+            $caption: Системы линейных уравнений
+            $test: true
+  - number-th: !!omap
+    - divisibility.tex:
+        $caption: Делимость
+    - remainders.tex:
+        $caption: Арифметика остатков
   - complex-numbers: !!omap
     - basics.tex:
         $caption: Комплексные числа
@@ -47,15 +53,38 @@
         $caption: Комплексные числа в геометрии
     - control: !!omap
       - proposed.tex:
-          $caption: 'Контрольная работа: комплексные числа'
+          $test: true
       - basics: !!omap
         - v1.tex:
-            $caption: 'Контрольная работа: комплексные числа'
+            $caption: Комплексные числа
+            $test: true
         - v2.tex:
-            $caption: 'Контрольная работа: комплексные числа'
+            $caption: Комплексные числа
+            $test: true
         - v3.tex:
-            $caption: 'Контрольная работа: комплексные числа'
+            $caption: Комплексные числа
+            $test: true
         - v4.tex:
-            $caption: 'Контрольная работа: комплексные числа'
+            $caption: Комплексные числа
+            $test: true
         - vr.tex:
-            $caption: 'Контрольная работа: комплексные числа'
+            $caption: Комплексные числа
+            $test: true
+  - combinatorics: !!omap
+    - basics.tex:
+        $caption: Перечислительная комбинаторика
+    - control: !!omap
+      - basics: !!omap
+        - v1.tex:
+            $caption: Перечислительная комбинаторика
+            $test: true
+        - v2.tex:
+            $caption: Перечислительная комбинаторика
+            $test: true
+        - vr.tex:
+            $caption: Перечислительная комбинаторика
+            $test: true
+  - probability: !!omap
+    - control: !!omap
+      - proposed.tex:
+          $test: true

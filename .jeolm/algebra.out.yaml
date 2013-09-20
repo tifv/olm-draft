@@ -1,0 +1,7 @@
+algebra:
+  $style: {extend: [subject]}
+  $fluid$opt:
+    exclude test: on
+  complete:
+    $fluid: [..]
+
