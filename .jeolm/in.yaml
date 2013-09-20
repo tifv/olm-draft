@@ -7,11 +7,11 @@
     - induction: !!omap
       - main.tex:
           $caption: Индукция
-      - control: !!omap []
+      - test: !!omap []
     - equivalence: !!omap
       - main.tex:
           $caption: Эквивалентные переходы
-      - control: !!omap
+      - test: !!omap
         - v1.tex:
             $caption: Эквивалентные переходы
             $test: true
@@ -24,7 +24,7 @@
   - linear-sys: !!omap
     - basics.tex:
         $caption: Системы линейных уравнений
-    - control: !!omap
+    - test: !!omap
       - basics: !!omap
         - v1.tex:
             $caption: Системы линейных уравнений
@@ -46,14 +46,13 @@
         $caption: Делимость
     - remainders.tex:
         $caption: Арифметика остатков
+    - test: !!omap []
   - complex-numbers: !!omap
     - basics.tex:
         $caption: Комплексные числа
     - geometry.tex:
         $caption: Комплексные числа в геометрии
-    - control: !!omap
-      - proposed.tex:
-          $test: true
+    - test: !!omap
       - basics: !!omap
         - v1.tex:
             $caption: Комплексные числа
@@ -70,10 +69,12 @@
         - vr.tex:
             $caption: Комплексные числа
             $test: true
+      - proposed.tex:
+          $test: true
   - combinatorics: !!omap
     - basics.tex:
         $caption: Перечислительная комбинаторика
-    - control: !!omap
+    - test: !!omap
       - basics: !!omap
         - v1.tex:
             $caption: Перечислительная комбинаторика
@@ -85,6 +86,6 @@
             $caption: Перечислительная комбинаторика
             $test: true
   - probability: !!omap
-    - control: !!omap
+    - test: !!omap
       - proposed.tex:
           $test: true
