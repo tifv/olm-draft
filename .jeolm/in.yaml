@@ -47,6 +47,11 @@
     - remainders.tex:
         $caption: Арифметика остатков
     - test: !!omap []
+    - diophantine-eqs.tex:
+        $caption: Диофантовы уравнения
+    - diophantine-more.tex:
+        $caption: Ещё диофантовы уравнения
+        $grade: 11
   - complex-numbers: !!omap
     - basics.tex:
         $caption: Комплексные числа
@@ -86,6 +91,8 @@
             $caption: Перечислительная комбинаторика
             $test: true
   - probability: !!omap
+    - basics.tex:
+        $caption: 'Вероятности: комбинаторика'
     - test: !!omap
       - proposed.tex:
           $test: true

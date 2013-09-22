@@ -1,10 +1,15 @@
-* source/algebra10/logarithm
-* source/algebra10/number-th
-* source/algebra10/polynomial
-* source/algebra10/quadratic
-* source/algebra10/trigonometry
+# 10
+* algebra/logarithm
+* algebra/number-th
+* algebra/polynomial
+* algebra/quadratic
+* algebra/trigonometry
 
-* source/algebra10/cutthroat
-* source/algebra10/exam
-* source/algebra10/misc
+* algebra/cutthroat
+* algebra/exam
+* algebra/misc
+
+# 11
+* algebra/probability/test
+* whatever
 
