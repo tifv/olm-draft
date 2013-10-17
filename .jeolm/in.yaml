@@ -7,7 +7,9 @@
     - induction: !!omap
       - main.tex:
           $caption: Индукция
-      - test: !!omap []
+      - test: !!omap
+        - pool.tex:
+            $test: true
     - equivalence: !!omap
       - main.tex:
           $caption: Эквивалентные переходы
@@ -46,12 +48,20 @@
         $caption: Делимость
     - remainders.tex:
         $caption: Арифметика остатков
-    - test: !!omap []
     - diophantine-eqs.tex:
         $caption: Диофантовы уравнения
+    - divisibility-criteria.tex:
+        $caption: Признаки делимости
+    - ferma-and-others.tex:
+        $caption: Четыре теоремы
     - diophantine-more.tex:
         $caption: Ещё диофантовы уравнения
         $grade: 11
+    - test: !!omap
+      - divisibility-pool.tex:
+          $test: true
+      - remainders-pool.tex:
+          $test: true
   - complex-numbers: !!omap
     - basics.tex:
         $caption: Комплексные числа
@@ -74,7 +84,7 @@
         - vr.tex:
             $caption: Комплексные числа
             $test: true
-      - proposed.tex:
+      - pool.tex:
           $test: true
   - combinatorics: !!omap
     - basics.tex:
@@ -94,5 +104,5 @@
     - basics.tex:
         $caption: 'Вероятности: комбинаторика'
     - test: !!omap
-      - proposed.tex:
+      - pool.tex:
           $test: true

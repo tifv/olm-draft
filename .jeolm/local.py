@@ -14,10 +14,10 @@ class Driver(OriginalDriver):
         return super().filter_autofluid(inpath, inrecord,
             fluid_opt=fluid_opt )
 
-    def extract_inrecord_caption(self, inpath, inrecord):
+    @classmethod
+    def extract_inrecord_caption(cls, inpath, inrecord):
         caption = super().extract_inrecord_caption(inpath, inrecord)
         if inrecord.get('$test', False):
             caption = r'\textinterrobang\ ' + caption
         return caption
-
 

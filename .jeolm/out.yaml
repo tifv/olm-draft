@@ -1,3 +1,5 @@
+$style: [/base, /pgflayout]
+
 algebra:
   $style: {extend: [subject]}
   $fluid$opt:
